@@ -5,4 +5,20 @@ What is Ditaa
 The original tool only work as a command line tool.
 This variants bring ditaa to webservice hype.
 
-Now, dita  can be efficiently used from a webserver (as a wiki filter), even in a mutualised server.
+Now, ditaa  can be efficiently used from a webserver (as a wiki filter), even in a mutualised server.
+
+Use DAS, Ditaa As a Service
+===========================
+
+Put ditaa_web.war in your favorite servlet container (glassfish, jetty, tomcat ...).
+From the client side, Ditaa is accessed with a simple POST request with this arguments :
+ * _ditaa_ the scheme.
+ * _no-antialias_
+ * _no-shadows_
+ * _scale_
+ * _round-corners_
+ * _no-separations_
+
+Don't forget to add caching.
+
+A PHP example is provided.
