@@ -21,4 +21,4 @@ From the client side, Ditaa is accessed with a simple POST request with this arg
 
 Don't forget to add caching.
 
-A PHP example is provided.
+A PHP and Python example are provided.
