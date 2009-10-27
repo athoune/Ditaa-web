@@ -10,8 +10,9 @@ Now, ditaa  can be efficiently used from a webserver (as a wiki filter), even in
 Use DAS, Ditaa As a Service
 ===========================
 
-Put ditaa_web.war in your favorite servlet container (glassfish, jetty, tomcat ...).
+Put ditaa\_web.war in your favorite servlet container (glassfish, jetty, tomcat ...).
 From the client side, Ditaa is accessed with a simple POST request with this arguments :
+
  * _ditaa_ the scheme.
  * _no-antialias_
  * _no-shadows_
@@ -22,3 +23,15 @@ From the client side, Ditaa is accessed with a simple POST request with this arg
 Don't forget to add caching.
 
 A PHP and Python example are provided.
+
+Build it
+========
+
+This project is a lazy **netbeans** project. You can import it and build it.
+If you don't care about netbeans, juste use **ant** :
+
+	$ ant
+	$ ls dist
+	ditaa_web.war   javadoc
+
+Snow leopard user have to update their ant, 1.7 is not enough, Netbeans projects wont 1.7.1. **Macport** provides the right ant.
