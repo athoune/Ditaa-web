@@ -41,3 +41,23 @@ You can test it at [http://localhost:8080/DitaaWeb/ditaa](http://localhost:8080/
 Build the war packet for your servlet container
 
 Snow leopard provides a decent maven2, and any linux must have a package with maven2
+
+Php
+---
+
+Php doesn't need build. Just copy the class and reads the example.
+
+Python
+------
+
+Read the source, and try it. You can hack the webservice url with your own servlet :
+
+	$ ./ditaa.py
+
+Trac
+----
+
+[Trac](http://trac.edgewall.org/) is a nice bug tracker with a wiki tool. The work is stolen from the graphviz module
+
+	$ python setup.py install
+
