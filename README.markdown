@@ -64,3 +64,7 @@ Trac
 	$ cd trac
 	$ python setup.py install
 
+Drupal
+------
+
+[Drupal](http://drupal.org) is a CMS. [Drupal-Ditaa](http://github.com/athoune/Drupal-Ditaa) got its own github.
