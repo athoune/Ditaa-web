@@ -32,6 +32,7 @@ Java
 
 This project use Maven2 for its build. Maven will download a lot of craps, but after that, you wille be able to test it without pain.
 
+	$ cd java
 	$ mvn jetty:run
 	
 You can test it at [http://localhost:8080/DitaaWeb/ditaa](http://localhost:8080/DitaaWeb/ditaa)
@@ -52,6 +53,7 @@ Python
 
 Read the source, and try it. You can hack the webservice url with your own servlet :
 
+	$ cd python
 	$ ./ditaa.py
 
 Trac
@@ -59,5 +61,6 @@ Trac
 
 [Trac](http://trac.edgewall.org/) is a nice bug tracker with a wiki tool. The work is stolen from the graphviz module
 
+	$ cd trac
 	$ python setup.py install
 
