@@ -27,11 +27,17 @@ A PHP and Python example are provided.
 Build it
 ========
 
-This project is a lazy **netbeans** project. You can import it and build it.
-If you don't care about netbeans, juste use **ant** :
+Java
+----
 
-	$ ant
-	$ ls dist
-	ditaa_web.war   javadoc
+This project use Maven2 for its build. Maven will download a lot of craps, but after that, you wille be able to test it without pain.
 
-Snow leopard user have to update their ant, 1.7 is not enough, Netbeans projects wont 1.7.1. **Macport** provides the right ant.
+	$ mvn jetty:run
+	
+You can test it at [http://localhost:8080/DitaaWeb/ditaa](http://localhost:8080/DitaaWeb/ditaa)
+
+	$ mvn package
+
+Build the war packet for your servlet container
+
+Snow leopard provides a decent maven2, and any linux must have a package with maven2
