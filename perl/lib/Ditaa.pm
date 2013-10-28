@@ -106,7 +106,7 @@ Ditaa - Perl Ditaa Class Implementation
 
 =head1 DESCRIPTION
 
-This module is a simple wrapper that envoke java virtual machine and user ditaa
+This module is a simple wrapper that invoke java virtual machine and use ditaa
 command line tool to convert a simple text into a flowchart image.
 
 =head1 Accessors
