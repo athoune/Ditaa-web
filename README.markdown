@@ -43,6 +43,26 @@ Build the war packet for your servlet container
 
 Snow leopard provides a decent maven2, and any linux must have a package with maven2
 
+Perl
+----
+
+Perl Ditaa class module implementation with Mojolicious::Lite (http://mojolicio.us) web test.
+
+To run web test you can install Mojolicious web framework using CPAN.
+
+    $ sudo cpan Mojolicious
+
+or...
+
+    $ curl get.mojolicio.us | sh
+
+
+After install mojolicious you can start development web server using the follow command:
+
+    $ morbo index.pl
+
+Now (and if all right), you can access your "Perl Ditaa Web" test at url address http://localhost:3000
+
 Php
 ---
 
