@@ -74,3 +74,80 @@ sub _make_command {
 
 1;
 
+__END__
+
+=pod
+
+=head1 NAME
+
+Ditaa - Perl Ditaa Class Implementation
+
+
+=head1 SYNOPSIS
+
+    use Ditaa;
+
+    # new ditaa instance
+    my $ditaa = Ditaa->new(
+        bin => '/path/to/binary/ditaa',
+        java => '/path/to/binary/java',
+    );
+
+    # ditaa string 
+    my $input = qq{
+        /--------------------\
+        | This is only a test|
+        \--------------------/
+    };
+
+    # rendering ditaa image
+    $ditaa->render_image($input, '/path/to/output/filename.png');
+
+
+=head1 DESCRIPTION
+
+This module is a simple wrapper that envoke java virtual machine and user ditaa
+command line tool to convert a simple text into a flowchart image.
+
+=head1 Accessors
+
+=head3 bin_path
+
+Acessor to get or set ditaa binary path
+
+    $ditaa->bin_path('/usr/bin/ditaa');
+    say $ditaa->bin_path;
+
+=head3 java_path
+
+Acessor to get or set java virtual machine path
+
+    $ditaa->java_path('/usr/bin/java');
+    say $ditaa->java_path;
+
+
+=head1 Methods
+
+=head3 render_image
+
+Method to pass informations for image render
+
+    # render image
+    $ditaa->render_image( $input, $output );
+
+
+=head1 AUTHOR
+
+2013 (c) Bivee L<http://bivee.com.br>
+
+Daniel Vinciguerra <daniel.vinciguerra@bivee.com.br>
+
+
+=head3 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2013 by Bivee.
+
+This is a free software; you can redistribute it and/or modify it under the same terms of Perl 5 programming 
+languagem system itself.
+
+=cut
